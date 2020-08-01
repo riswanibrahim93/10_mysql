@@ -1,0 +1,9 @@
+a>
+SELECT `id`, `name`, `email` FROM `users`;
+
+b>
+SELECT `id`, `name`, `description`, `price`, `stock`, `category_id` FROM `items` WHERE `price` > 1000000;
+SELECT `id`, `name`, `description`, `price`, `stock`, `category_id` FROM `items` WHERE `name` LIKE '%sang%';
+
+c>
+SELECT items.*, categories.name FROM items INNER JOIN categories WHERE items.category_id = categories.id;

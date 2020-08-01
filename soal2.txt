@@ -1,0 +1,23 @@
+create table `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(225) NOT NULL,
+  `email` varchar(225) NOT NULL,
+  `password` varchar(225) NOT NULL
+  PRIMARY KEY (`id`)
+); 
+
+create table `items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(225) NOT NULL,
+  `description` varchar(225) NOT NULL,
+  `price` int(225) NOT NULL,
+  `stock` int(225) NOT NULL,
+  `category_id` int(225) NOT NULL references `users`,
+  PRIMARY KEY (`id`,`id`)
+);
+
+create table `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(225) NOT NULL,
+  PRIMARY KEY (`id`)
+); 

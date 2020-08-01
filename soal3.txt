@@ -1,0 +1,15 @@
+INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
+(1, 'John Doe', 'john@doe.com', 'john123'),
+(2, 'John Doe', 'john@doe.com', 'jenita123');
+
+INSERT INTO `items` (`id`, `name`, `description`, `price`, `stock`, `category_id`) VALUES
+(1, 'Sumsang b50', 'hape keren dari merek sumsang', 4000000, 100, 1),
+(2, 'Uniklooh', 'baju keren dari brand ternama', 500000, 50, 2),
+(3, 'IMHO Watch', 'jam tangan anak yang jujur banget', 2000000, 10, 1);
+
+INSERT INTO `categories` (`id`, `name`) VALUES
+(1, 'gadget'),
+(2, 'cloth'),
+(3, 'men'),
+(4, 'women'),
+(5, 'branded');
